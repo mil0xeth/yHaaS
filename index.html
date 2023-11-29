@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Request form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+        }
+
+        h1 {
+            margin: 50px 0 0px;
+            font-weight: 2000;
+            font-size: 50px;
+            color: #cbcbcb;
+        }
+
+        p {
+            margin: 0 0 5px;
+        }
+
+        .main-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 75vh;
+            background: #000000;
+        }
+
+        .title-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000000;
+        }
+
+        form {
+            padding: 25px;
+            margin: 25px;
+            box-shadow: 0 2px 5px #dedede;
+            background: #f5f5f5;
+        }
+
+        .fas {
+            margin: 25px 10px 0;
+            font-size: 72px;
+            color: #fff;
+        }
+
+        .fa-envelope {
+            transform: rotate(-20deg);
+        }
+
+        .fa-at,
+        .fa-mail-bulk {
+            transform: rotate(10deg);
+        }
+
+        input,
+        textarea {
+            width: calc(100% - 18px);
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #666;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #000000;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        button:hover {
+            background: #0905cf;
+        }
+
+        @media (min-width: 568px) {
+            .main-block {
+                flex-direction: row;
+            }
+
+            .left-part,
+            form {
+                width: 50%;
+            }
+
+            .fa-at {
+                margin-top: -10%;
+                margin-left: 65%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(0, 0, 0);">
+    <div class="title-block">
+        <h1>Strategy Automation - yearn V3</h1>
+    </div>
+    <div class="main-block">
+
+        <div class="left-part">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://i.imgur.com/emq4kFE.png"
+                alt="yHaaS" class="center">
+        </div>
+        <form
+            action="https://github.com/mil0xeth/yHaaS/issues/new">
+
+            <div class="info">
+                <input class="title" type="text" name="title" placeholder="Strategy name">
+                <input class="labels" type="text" name="labels" placeholder="Network (Mainnet, Polygon...)">
+                <input class="body" type="text" name="body" placeholder="Strategy address (0x...)">
+                <input class="body" type="text" name="body" placeholder="Strategy repo (github.com/...)">
+                <input class="body" type="text" name="body" placeholder="Estimated automation frequency (daily, weekly...)">
+                <select class="template" name="template">
+                    <option value="automation-request.md">Automation Request</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit" href="https://github.com/mil0xeth/yHaaS/issues">Submit Automation Request</button>
+        </form>
+    </div>
+</body>
+
+</html>
