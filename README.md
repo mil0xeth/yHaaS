@@ -11,5 +11,6 @@ Enjoy automatic harvests of your yearn V3 strategy!
 
 |Network | yHaaS address|
 |-----|--------|
+|Arbitrum | 0xeE2AF43a05F912599Ae2Be4BcdFf76e8C377562f     |
 |Polygon | 0xbB8065185F9C4b8b913F0C66Fdb77D01C12B875D      |
 |Mainnet |       |
